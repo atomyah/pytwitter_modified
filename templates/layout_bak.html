@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2299.5">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html&gt;&lt;head&gt;&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport"<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="stylesheet" href="/static/pure-min.css"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="stylesheet" href="/static/side-menu.css"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="stylesheet" type="text/css"</p>
+<p class="p1"><span class="Apple-converted-space">        </span>href="{{ staticfile('style.css') }}"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;俳句SNS&lt;/title&gt;</p>
+<p class="p1">&lt;/head&gt;&lt;body&gt;</p>
+<p class="p1">&lt;div id="layout" class="page"&gt;</p>
+<p class="p1">{% block header %}</p>
+<p class="p1">&lt;!-- ここにヘッダの内容 --&gt;</p>
+<p class="p1">{% endblock %}</p>
+<p class="p1">&lt;div id="main"&gt;</p>
+<p class="p1">&lt;div class="header"&gt;</p>
+<p class="p1">&lt;h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{% block title %}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>俳句SNS</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{% endblock %}</p>
+<p class="p1">&lt;/h1&gt;</p>
+<p class="p1">&lt;/div&gt;&lt;!-- end of .header --&gt;</p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1">&lt;div class="contents"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{% block contents %}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- ここにメインコンテンツ --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>{% endblock %}</p>
+<p class="p1">&lt;/div&gt;&lt;!-- end of .contents --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">{% block footer %}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;p class="footer"&gt;&lt;a href="/" class="pure-button"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>トップページへ&lt;/a&gt;&lt;/p&gt;</p>
+<p class="p1">{% endblock %}</p>
+<p class="p1">&lt;/div&gt;&lt;!-- end of #main --&gt;</p>
+<p class="p1">&lt;/div&gt;&lt;!-- end of #layout --&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">{% block footer_script %}{% endblock %}</p>
+<p class="p1">&lt;/body&gt;&lt;/html&gt;</p>
+</body>
+</html>
